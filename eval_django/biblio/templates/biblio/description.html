@@ -1,0 +1,15 @@
+{% load static %}
+<h1><center>Infos Livre : </center></h1>
+{% if livres.id == 1 %}
+	<center><img src="{% static 'biblio/etranger.jpg' %}" name="etranger" width="400" height="500"/></center></h2>
+{% endif %}
+{% if livres.id == 3 %}
+	<center><img src="{% static 'biblio/candide.jpg' %}" name ="Candide" width="500" height="500" /></center></h2>
+{% endif %}
+{% if livres.id == 4 %}
+	<center><img src="{% static 'biblio/Malade.jpg' %}" name="Malade" width="400" height="500"/></center></h2>
+{% endif %}
+<h1><center>Titre : <strong>{{livres.titre}}</strong></center></h1>
+<h1><center>Auteur : <strong>{{livres.auteur}}</strong></center></h1>
+<h1><center>Annee de parution : <strong>{{livres.annee.year}}</strong></center></h1>
+
